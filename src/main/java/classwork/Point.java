@@ -1,33 +1,30 @@
-package classwork;
+ package com.company;
 
 public class Point {
-
-    static double x;
-    static double y;
-
+    static double x, y;
     public Point(int x, int y) {
-        x = (double)x;
-        y = (double)y;
+        this.x = x;
+        this.y = y;
     }
 
     public void coordinatesReturn() {
-        System.out.println("(x,y) is (" + x + "," + y + ")");
+        System.out.println("(x,y) is " + "(" + x + "," + y + ")");
     }
 
     public void add(double x, double y) {
-        x = x;
-        y = y;
+        this.x = x;
+        this.y = y;
     }
 
     public void addX(double x) {
-        x = x;
+        this.x = x;
     }
 
     public void addY(double y) {
-        y = y;
+        this.y = y;
     }
 
     public double distanceReturn() {
-        return Math.sqrt(x * x + y * y);
+        return Math.sqrt(x*x+y*y);
     }
 }
