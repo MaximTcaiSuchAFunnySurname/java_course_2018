@@ -6,45 +6,13 @@ public class Hamster {
     int weight;
     int age;
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public Hamster(String name, String gender, int weight, int age) {
         this.name = name;
         this.gender = gender;
         this.weight = weight;
 
-        if(age>20){
-            System.out.println("This hamster is so old..." );
+        if (age > 20) {
+            System.out.println("This hamster is so old...");
         } else {
             this.age = age;
         }
@@ -78,5 +46,36 @@ public class Hamster {
             System.out.println("They have the same gender");
         }
     }
-}
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}

@@ -10,23 +10,21 @@ public class Segment {
     }
 
     public double segmentLength() {
-        double res = ((end.x - start.x) * (end.x - start.x)) + ((end.y - start.y) * (end.y - start.y));
-        return Math.sqrt(res);
+        return Math.sqrt(((end.x - start.x) * (end.x - start.x)) + ((end.y - start.y) * (end.y - start.y)));
     }
-       public double angleReturn(){
-        return Math.atan((end.y-start.y)/(end.x-start.x));
-       }
 
-    public void coordinatesReturn() {
+    public double angleBetweenOXAndSegment() {
+        return Math.atan((end.y - start.y) / (end.x - start.x));
+    }
+
+    public void coordinates() {
         System.out.println("1st (x,y) is " + "(" + start.x + "," + start.y + ")");
         System.out.println("2nd (x,y) is " + "(" + end.x + "," + end.y + ")");
     }
 
     public boolean ifPointLiesOnLine(Point point) {
-        if (point.x / point.y == start.x / start.y && point.x / point.y == end.x / end.y && start.x / start.y == end.x / end.y) {
+        if ((point.x - start.x) / (end.x - start.x) == (point.y - start.y) / (end.y - start.y)) {
             return true;
         } else return false;
     }
-
-
 }

@@ -1,13 +1,14 @@
- package com.company;
+package com.company;
 
 public class Point {
-    static double x, y;
-    public Point(int x, int y) {
+    double x, y;
+
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public void coordinatesReturn() {
+    public void coordinates() {
         System.out.println("(x,y) is " + "(" + x + "," + y + ")");
     }
 
@@ -24,7 +25,7 @@ public class Point {
         this.y = y;
     }
 
-    public double distanceReturn() {
-        return Math.sqrt(x*x+y*y);
+    public double distance() {
+        return Math.sqrt(x * x + y * y);
     }
 }

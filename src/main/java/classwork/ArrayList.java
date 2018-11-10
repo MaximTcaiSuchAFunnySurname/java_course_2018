@@ -1,14 +1,14 @@
 package com.company.array;
 
 import java.util.Arrays;
-
+// извиняюсь за то, что не успел сделать shrink, pop и другое. Постараюсь утром сделать
 public class ArrayList<Item> {
     private static final int DEFAULT_CAPACITY = 10;
     private Item[] elementData;
     private int size;
 
     @SuppressWarnings("unchecked")
-    public ArrayList(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9) {
+    public ArrayList() {
         elementData = (Item[]) new Object[DEFAULT_CAPACITY];
     }
 
@@ -28,9 +28,8 @@ public class ArrayList<Item> {
     }
 
 
-    public static int[] sort(int[] array) {
+    public static void sort(int[] elementData) {
         for (int n = 0; n < 5; n++) {
-
             for (int i = 0; i < array.length - 1; i++) {
                 if (array[i] > array[i + 1]) {
                     int temp = array[i];
@@ -44,7 +43,6 @@ public class ArrayList<Item> {
                 }
             }
         }
-        return array;
     }
 
 //    public int popByIndex(int index) {
