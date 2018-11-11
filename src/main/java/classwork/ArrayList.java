@@ -1,7 +1,7 @@
 package com.company.array;
 
 import java.util.Arrays;
-// извиняюсь за то, что не успел сделать shrink, pop и другое. Постараюсь утром сделать
+
 public class ArrayList<Item> {
     private static final int DEFAULT_CAPACITY = 10;
     private Item[] elementData;
