@@ -1,0 +1,62 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+    }
+
+    public class Dictionary {
+        String key, value;
+
+        //успел только два
+        public void newEntry(String key, String value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public String look(String key) {
+            if (this.key == key) return value;
+            else return "Cant find entry for " + key;
+        }
+    }
+
+    public class EncapsulationDemo {
+        private int number;
+        private String stringValue;
+        private Object anObject;
+
+        public int getNumber() {
+            return number;
+        }
+
+        public void setNumber(int number) {
+            this.number = number;
+        }
+
+        public String getStringValue() {
+            return stringValue;
+        }
+
+        public void setStringValue(String stringValue) {
+            this.stringValue = stringValue;
+        }
+
+        public Object getAnObject() {
+            return anObject;
+        }
+
+        public void setAnObject(Object anObject) {
+            this.anObject = anObject;
+        }
+
+        public EncapsulationDemo() {
+        }
+
+        public EncapsulationDemo(int number, String stringValue, Object anObject) {
+            this.number = number;
+            this.stringValue = stringValue;
+            this.anObject = anObject;
+        }
+    }
+}
