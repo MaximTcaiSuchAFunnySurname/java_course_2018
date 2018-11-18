@@ -1,4 +1,4 @@
-package com.company;
+package classwork.util;
 
 public class Segment {
     static Point start;

@@ -1,26 +1,28 @@
 package classwork.animal;
 
-public class SecondCat extends Animal {
+public class Dog extends Animal{
     Breed breed;
 
-    public SecondCat(Color color, Age age, String name, Breed breed) {
+    public Dog(Color color, Dog.Breed breed, Age age, String name) {
         super(color, age, name);
         this.breed = breed;
     }
-
-    public enum Breed {
-        BRITISH,
-        SPHINKS,
-        HOMELESS,
+    public void display(){
+        System.out.println("Hi from dog");
     }
-
     @Override
     public String toString() {
-        return "SecondCat{" +
+        return "Dog{" +
                 "breed=" + breed +
                 ", color=" + color +
                 ", age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public enum Breed{
+        MOPS,
+        DALMATINE,
+        SHPIZ,
     }
 }
