@@ -1,6 +1,4 @@
-package classwork.gamesForMyMaster;
-
-import java.util.Random;
+package classwork.gamesForMyMaster.slotMachines;
 
 public class Card {
     public static int cardID;

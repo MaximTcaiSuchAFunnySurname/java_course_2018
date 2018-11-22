@@ -1,13 +1,9 @@
 package classwork;
 
-import classwork.animal.Animal;
-import classwork.animal.Dog;
-import classwork.animal.SecondCat;
-import classwork.gamesForMyMaster.Card;
-import classwork.gamesForMyMaster.Game;
-import classwork.gamesForMyMaster.PrizeCategory;
-import classwork.gamesForMyMaster.Terminal;
-import classwork.human.Human;
+import classwork.gamesForMyMaster.slotMachines.Card;
+import classwork.gamesForMyMaster.slotMachines.Game;
+import classwork.gamesForMyMaster.slotMachines.PrizeCategory;
+import classwork.gamesForMyMaster.slotMachines.Terminal;
 import classwork.paper.Book;
 import classwork.paper.Magazine;
 import classwork.paper.Printer;
@@ -15,7 +11,6 @@ import classwork.util.ASCII;
 import classwork.util.Data;
 import classwork.util.Day;
 import classwork.util.Month;
-import classwork.values.Container;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -98,7 +93,7 @@ public class Main {
         Game game = new Game(in.next());
         System.out.println("Your card ID is " + card.hashCode());
         game.moneyBoost(card);
-        System.out.println( "YOur balance is " + card.numberOfPoints +" points");
+        System.out.println("YOur balance is " + card.numberOfPoints + " points");
         System.out.println("Choose a prize you want:");
         System.out.println("teddyBear, rubber, pizza");
         PrizeCategory prize = new PrizeCategory(in.next());
