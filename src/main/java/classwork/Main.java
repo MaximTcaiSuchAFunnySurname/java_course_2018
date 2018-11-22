@@ -4,6 +4,7 @@ import classwork.gamesForMyMaster.slotMachines.Card;
 import classwork.gamesForMyMaster.slotMachines.Game;
 import classwork.gamesForMyMaster.slotMachines.PrizeCategory;
 import classwork.gamesForMyMaster.slotMachines.Terminal;
+import classwork.gamesForMyMaster.slotMachines.hangman.Hangman;
 import classwork.paper.Book;
 import classwork.paper.Magazine;
 import classwork.paper.Printer;
@@ -85,21 +86,23 @@ public class Main {
 //        Container cont2 = new Container<String, Integer>("Container", 47);
 //        cont.printDisplay();
 //        cont2.printDisplay();
-        System.out.println("Select a game:");
-        System.out.println("Overwatch, Hearthstone");
-        Card card = new Card();
-        card.cardID = card.hashCode();
-        Terminal terminal = new Terminal();
-        Game game = new Game(in.next());
-        System.out.println("Your card ID is " + card.hashCode());
-        game.moneyBoost(card);
-        System.out.println("YOur balance is " + card.numberOfPoints + " points");
-        System.out.println("Choose a prize you want:");
-        System.out.println("teddyBear, rubber, pizza");
-        PrizeCategory prize = new PrizeCategory(in.next());
-
-        prize.prizeChoose(terminal, card);
+//        System.out.println("Select a game:");
+//        System.out.println("Overwatch, Hearthstone");
+//        Card card = new Card();
+//        card.cardID = card.hashCode();
+//        Terminal terminal = new Terminal();
+//        Game game = new Game(in.next());
+//        System.out.println("Your card ID is " + card.hashCode());
+//        game.moneyBoost(card);
+//        System.out.println("YOur balance is " + card.numberOfPoints + " points");
+//        System.out.println("Choose a prize you want:");
+//        System.out.println("teddyBear, rubber, pizza");
+//        PrizeCategory prize = new PrizeCategory(in.next());
+//
+//        prize.prizeChoose(terminal, card);
 //        prize.prizeGive();
+        Hangman hangman = new Hangman();
+        hangman.wordReturn();
     }
 
 
