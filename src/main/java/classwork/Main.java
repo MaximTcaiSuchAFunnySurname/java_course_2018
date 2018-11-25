@@ -101,8 +101,8 @@ public class Main {
 //
 //        prize.prizeChoose(terminal, card);
 //        prize.prizeGive();
-        Hangman hangman = new Hangman();
-        hangman.wordReturn();
+        Hangman hangman = new Hangman("java", 10);
+       hangman.attempts(in.next());
     }
 
 

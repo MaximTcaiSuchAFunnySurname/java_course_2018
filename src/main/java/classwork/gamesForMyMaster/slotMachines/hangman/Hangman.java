@@ -2,27 +2,39 @@ package classwork.gamesForMyMaster.slotMachines.hangman;
 
 import classwork.util.ArrayList;
 
-import java.util.Scanner;
-
 public class Hangman {
-    Scanner in = new Scanner(System.in);
-    String[] word = new String[]{"j","a","v","a"};
-    ArrayList<String> stringArrayList = new ArrayList<>();
-    public void wordReturn(){
+    String word;
+    int n = 0;
+    int border;
 
-       for(int i = 0; i < 33;){
-           String guess = in.next();
-           for (int k = 0; k<word.length-1; k++)
-           if (guess == word[i]){
-               System.out.print(word[i]);
-           } else{
-               System.out.print("_");
-
-           }
-
-       }
-
+    public void attempts(String letter) {
+        if (word.contains(letter)) {
+            System.out.println("Correct letter");
+        } else {
+            System.out.println("Wrong letter");
+            n++;
+            System.out.println(n + "/" + border);
+        }
+        for (int i = 0; i<word.length(); i++){
+            char elem = word.charAt(i);
+            Character.toString(elem);
+            if ( elem==letter){
+                System.out.print(letter);
+                continue;
+            } else{
+                System.out.print("_");
+                continue;
+            }
 
         }
     }
+
+    public Hangman(String word, int border) {
+        this.word = word;
+        this.border = border;
+    }
+}
+
+
+
 
