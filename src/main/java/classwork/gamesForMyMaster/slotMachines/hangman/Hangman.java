@@ -15,13 +15,12 @@ public class Hangman {
             n++;
             System.out.println(n + "/" + border);
         }
-        for (int i = 0; i<word.length(); i++){
+        for (int i = 0; i < word.length(); i++) {
             char elem = word.charAt(i);
-            Character.toString(elem);
-            if ( elem==letter){
+            if (String.valueOf(elem).equals(letter)) {
                 System.out.print(letter);
                 continue;
-            } else{
+            } else {
                 System.out.print("_");
                 continue;
             }

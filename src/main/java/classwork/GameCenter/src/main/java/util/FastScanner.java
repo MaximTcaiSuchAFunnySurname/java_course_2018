@@ -1,4 +1,4 @@
-package classwork.util;
+package util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class FastScanner {
         return st.nextToken();
     }
 
-    int nextInt() {
+    public int nextInt() {
         return Integer.parseInt(next());
     }
 
