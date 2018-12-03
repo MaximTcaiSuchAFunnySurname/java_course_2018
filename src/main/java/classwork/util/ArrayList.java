@@ -1,4 +1,4 @@
-package com.company.array;
+package classwork.util;
 
 import java.util.Arrays;
 
@@ -28,22 +28,22 @@ public class ArrayList<Item> {
     }
 
 
-    public static void sort(int[] elementData) {
-        for (int n = 0; n < 5; n++) {
-            for (int i = 0; i < array.length - 1; i++) {
-                if (array[i] > array[i + 1]) {
-                    int temp = array[i];
-                    array[i] = array[i + 1];
-                    array[i + 1] = temp;
-                    if (array[i] == 0) {
-                        int buf = array[i];
-                        array[i] = array[array.length - 1];
-                        array[array.length - 1] = buf;
-                    }
-                }
-            }
-        }
-    }
+//    public  void sort() {
+//        for (int n = 0; n < 5; n++) {
+////            for (int i = 0; i < elementData.length - 1; i++) {
+//                if (elementData[i] > elementData[i + 1]) {
+//                    Item temp = elementData[i];
+//                    elementData[i] = elementData[i + 1];
+//                    elementData[i + 1] = temp;
+////                    if (elementData[i] == (Item.) 0) {
+//                        Item buf = elementData[i];
+////                        elementData[i] = elementData[elementData.length - 1];
+////                        elementData[elementData.length - 1] = buf;
+////                    }
+//                }
+//            }
+//        }
+//    }
 
 //    public int popByIndex(int index) {
 //

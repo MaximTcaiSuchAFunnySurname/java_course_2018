@@ -1,4 +1,4 @@
-package com.company.animal;
+package classwork.animal;
 
 public class Cat {
     int age;
