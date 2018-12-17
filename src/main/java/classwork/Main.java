@@ -23,7 +23,6 @@ public class Main {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-
 //        Dog bobik = new Dog(Animal.Color.WHITE,
 //                Dog.Breed.SHPIZ, Animal.Age.OLD, "Bobik");
 //        System.out.println(bobik.toString());

@@ -1,5 +1,6 @@
 package storage;
 
+import classwork.GameCenter.src.main.java.storage.IDao;
 import org.jetbrains.annotations.NotNull;
 import org.mapdb.DB;
 import org.mapdb.DBMaker;

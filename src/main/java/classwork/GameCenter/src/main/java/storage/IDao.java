@@ -1,4 +1,4 @@
-package storage;
+package classwork.GameCenter.src.main.java.storage;
 
 import org.jetbrains.annotations.NotNull;
 
